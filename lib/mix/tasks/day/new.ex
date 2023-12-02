@@ -11,7 +11,8 @@ defmodule Mix.Tasks.Day.New do
 
     test_dir |> TaskHelper.mkdir()
     Path.join([test_dir, "solution_test.exs"]) |> File.write!(render_test_file(padded_day))
-    Path.join([test_dir, "input.txt"]) |> File.write!("")
+    Path.join([test_dir, "input1.txt"]) |> File.write!("")
+    Path.join([test_dir, "input2.txt"]) |> File.write!("")
 
     IO.puts("Generated files for day #{padded_day}")
     IO.puts("Instructions: https://adventofcode.com/2022/day/#{raw_day}")
@@ -24,8 +25,6 @@ defmodule Mix.Tasks.Day.New do
   defp render_solution_file(day) do
     """
     defmodule Aoc2023.Day#{day} do
-      alias Aoc2023.Day#{day}
-
       defmodule Part1 do
         def solve(input) do
           raise "Not implemented yet"
@@ -46,19 +45,19 @@ defmodule Mix.Tasks.Day.New do
     defmodule Aoc2023.Day#{day}Test do
       use ExUnit.Case
 
-      alias Aoc2023.Day#{day}
       alias Aoc2023.Day#{day}.Part1
       alias Aoc2023.Day#{day}.Part2
 
-      @test_input File.read!("test/day#{day}/input.txt")
+      @test_input1 File.read!("test/day#{day}/input1.txt")
+      @test_input2 File.read!("test/day#{day}/input2.txt")
 
       describe "Day#{day}" do
         test "Part1" do
-          assert 42 == @test_input |> Part1.solve()
+          assert 42 == @test_input1 |> Part1.solve()
         end
 
         test "Part2" do
-          assert 1 == 1
+          assert 42 == @test_input2 |> Part2.solve()
         end
       end
     end
