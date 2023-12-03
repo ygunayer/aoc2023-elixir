@@ -34,7 +34,7 @@ defmodule Aoc2023.Day01 do
 
     case matched_tokens do
       [] ->
-        raise ArgumentError, "Invalid calibration input #{val}"
+        raise ArgumentError, message: "Invalid calibration input #{val}"
 
       _ ->
         {_, _, first_digit} = List.first(matched_tokens)
