@@ -79,13 +79,11 @@ defmodule Aoc2023.Day04 do
 
   defmodule Part2 do
     def solve(input) do
-      cards =
-        input
-        |> Aoc2023.read_lines()
-        |> Aoc2023.remove_blanks()
-        |> Enum.map(&Aoc2023.Day04.parse_card!/1)
-
-      Aoc2023.Day04.count_with_copies(cards)
+      input
+      |> Aoc2023.read_lines()
+      |> Aoc2023.remove_blanks()
+      |> Enum.map(&Aoc2023.Day04.parse_card!/1)
+      |> Aoc2023.Day04.count_with_copies()
     end
   end
 end
