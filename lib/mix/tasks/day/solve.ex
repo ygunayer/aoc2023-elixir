@@ -22,7 +22,7 @@ defmodule Mix.Tasks.Day.Solve do
 
       IO.puts("Day: #{padded_day}, Part: #{part}")
       IO.puts("--------")
-      IO.puts(result)
+      IO.puts(inspect(result))
       IO.puts("")
     end)
   end

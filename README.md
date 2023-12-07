@@ -5,7 +5,7 @@ My Elixir solutions for Advent of Code 2023
 | Date    | Mon  | Tue  | Wed  | Thu  | Fri  | Sat  | Sun  |
 |:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `27.11` |      |      |      |      | [⭐️⭐️](./lib/day01/solution.ex) | [⭐️⭐️](./lib/day02/solution.ex) | [⭐️⭐️](./lib/day03/solution.ex) |
-| `04.12` | [⭐️⭐️](./lib/day04/solution.ex) |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
+| `04.12` | [⭐️⭐️](./lib/day04/solution.ex) | [⭐️⭐️](./lib/day05/solution.ex) |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
 | `11.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
 | `18.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
 | `25.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
