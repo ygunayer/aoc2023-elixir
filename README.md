@@ -8,7 +8,7 @@ My Elixir solutions for Advent of Code 2023
 | `04.12` | [⭐️⭐️](./lib/day04/solution.ex) | [⭐️⭐️](./lib/day05/solution.ex) | [⭐️⭐️](./lib/day06/solution.ex) | [⭐️⭐️](./lib/day07/solution.ex) | [⭐️⭐️](./lib/day08/solution.ex) |  ⏳  |  ⏳  |
 | `11.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
 | `18.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
-| `25.12` |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |  ⏳  |
+| `25.12` |  ⏳  |      |      |      |      |      |      |
 
 ## Running
 Make sure to retrieve dependencies
