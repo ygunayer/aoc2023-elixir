@@ -1,5 +1,5 @@
 defmodule Aoc2023 do
-  @number_pattern ~r/(\d+)/
+  @number_pattern ~r/(\-?\d+)/
 
   def read_lines(input), do: input |> read_lines(false) |> Enum.map(&String.trim/1)
   def read_lines(input, false), do: input |> String.split(~r/\n/)
