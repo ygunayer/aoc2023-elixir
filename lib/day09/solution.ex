@@ -16,10 +16,6 @@ defmodule Aoc2023.Day09 do
   def sum_next_values(history) do
     [history | find_differences(history)]
     |> Enum.map(&Enum.at(&1, -1))
-    |> Enum.map(fn nums ->
-      IO.inspect(nums)
-      nums
-    end)
     |> Enum.sum()
   end
 
