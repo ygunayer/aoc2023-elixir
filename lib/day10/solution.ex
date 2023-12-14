@@ -212,7 +212,7 @@ defmodule Aoc2023.Day10 do
       main_loop = Aoc2023.Day10.find_main_loop(grid, start_pos)
       enclosed = Aoc2023.Day10.find_enclosed_cells(grid, main_loop)
 
-      Aoc2023.Day10.show_grid(input, grid, main_loop, enclosed)
+      # Aoc2023.Day10.show_grid(input, grid, main_loop, enclosed)
 
       length(enclosed)
     end

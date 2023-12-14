@@ -28,4 +28,13 @@ defmodule Aoc2023 do
 
   def lcm(0, 0), do: 0
   def lcm(a, b), do: div(a * b, gcd(a, b))
+
+  def permutations([], _), do: [[]]
+  def permutations(_, 0), do: [[]]
+
+  def permutations(list, n) do
+    for head <- list, tail <- permutations(list, n - 1) do
+      [head | tail]
+    end
+  end
 end
